@@ -7,3 +7,9 @@ console.log(etaPasseggero);
 // costo al km
 var costoKm = (0.21 * numeroKm)
 console.log(costoKm);
+// sconto minorenni
+var scontoMinorenni = ((costoKm *20)/100)
+console.log(scontoMinorenni);
+// sconto anziani
+var scontoAnziani = ((costoKm *40)/100)
+console.log(scontoAnziani);
