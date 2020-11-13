@@ -19,9 +19,9 @@ if (isNaN(numeroKm && etaPasseggero)) {
         alert("devi inserire un numero");
 }
 if (etaPasseggero < 18){
-  alert((costoKm - scontoMinorenni) +"€");
+  alert((costoKm - scontoMinorenni).toFixed(2) +"€");
 }else if( etaPasseggero >= 65){
-  alert((costoKm - scontoAnziani) +"€");
+  alert((costoKm - scontoAnziani).toFixed(2) +"€");
 }else {
-  alert(costoKm +"€");
+  alert(costoKm.toFixed(2) +"€");
 }
