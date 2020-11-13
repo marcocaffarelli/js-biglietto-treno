@@ -8,8 +8,17 @@ console.log(etaPasseggero);
 var costoKm = (0.21 * numeroKm)
 console.log(costoKm);
 // sconto minorenni
-var scontoMinorenni = ((costoKm *20)/100)
+var scontoMinorenni = ((costoKm *20)/100);
 console.log(scontoMinorenni);
 // sconto anziani
-var scontoAnziani = ((costoKm *40)/100)
+var scontoAnziani = ((costoKm *40)/100);
 console.log(scontoAnziani);
+
+// costo biglietto
+if (etaPasseggero < 18){
+  alert(costoKm - scontoMinorenni);
+}else if( etaPasseggero >= 65){
+  alert(costoKm - scontoAnziani);
+}else {
+  alert(costoKm);
+}
