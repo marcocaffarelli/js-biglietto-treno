@@ -4,3 +4,6 @@ console.log(numeroKm);
 // chiedere all'utente l'età
 var etaPasseggero = Number(prompt("scrivi la tua età?"));
 console.log(etaPasseggero);
+// costo al km
+var costoKm = (0.21 * numeroKm)
+console.log(costoKm);
