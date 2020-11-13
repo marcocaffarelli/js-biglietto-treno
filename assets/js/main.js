@@ -15,13 +15,14 @@ var scontoAnziani = ((costoKm *40)/100);
 console.log(scontoAnziani);
 
 // costo biglietto
-if (isNaN(numeroKm && etaPasseggero)) {
-        alert("devi inserire un numero");
-}
+if (isNaN(numeroKm) || isNaN(etaPasseggero)) {
+      alert("devi inserire un numero");
+}else{
 if (etaPasseggero < 18){
   alert((costoKm - scontoMinorenni).toFixed(2) +"€");
 }else if( etaPasseggero >= 65){
   alert((costoKm - scontoAnziani).toFixed(2) +"€");
 }else {
   alert(costoKm.toFixed(2) +"€");
+}
 }
